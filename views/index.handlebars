@@ -1,0 +1,93 @@
+<div class="row">
+    <br>
+    <div class="col s12 m8 l7">
+        <div class='center-align'>
+            <h1>EAT DA BURGER</h1>
+        </div>
+    </div>
+    <div class="col s6 m2 l2">
+        <img src="assets/img/burger.ico" alt="burger" class="responsive-img" id="burgerPic" />
+    </div>
+    <div class="col s6 m2 l2">
+        <img src="assets/img/burger.ico" alt="burger" class="responsive-img" id="burgerPic" />
+    </div>
+</div>
+<div class="divider"></div>
+<!-- intro to page -->
+<div class='row'>
+    <div class='col s12'>
+        <div class='section'>
+            <p class='center-align flow-text'>Do you want to eat all the burgers but just can't find enough time in the day? Well, we have a solution for you! Start by adding burgers below and when you have eaten one of those scrumptious little burgers, click 'Devour It!' and we'll take it off the list so you can move on to the next delicious patty!
+            </p>
+        </div>
+    </div>
+</div>
+<div class="divider"></div>
+<!-- middle row -->
+<div class='row'>
+    <!-- left side. add new burgers -->
+    <div class='col s12 m6 l6'>
+        <div class='row'>
+            <div class='col s12 m12 l12'>
+                <h4 class='center-align sectionHead'>Add A Burger</h4>
+                <div class="divider"></div>
+            </div>
+        </div>
+        <div class='row'>
+            <form class="col s12 m12 l12" action="/" method="POST">
+                <div class='row inputSection'>
+                    <div class="input-field col s10 offset-s1 center-align">
+                        <input type="text" id="ca" name="burger_name" </div>
+                        <label for="ca">Burger:</label>
+                        <button class="btn waves-effect waves-light" type="submit">Add Burger</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- right side. show list of burgers -->
+    <div class='col s12 m6 l6'>
+        <div class='row'>
+            <div class='col s12 m12 l12'>
+                <h4 class='center-align sectionHead'>Burgers to Eat</h4>
+                <div class="divider"></div>
+            </div>
+        </div>
+        <div class='row'>
+            <div class='col s12'>
+                <div class='row'>
+                    <ul class='center-align'>
+                        {{#each burgers}} {{#unless this.devoured}}
+                        <div class='col s6'>
+                            <li>
+                                <p class='flow-text' id='newBurgers'>{{this.burger_name}}</p>
+                                <form action="/{{this.id}}?_method=PUT" method="POST">
+                                    <input type="hidden" name="devoured" value="1">
+                                    <button class="btn waves-effect waves-light" type="submit">Devour It!</button>
+                                </form>
+                            </li>
+                        </div>
+                        {{/unless}} {{/each}}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end of middle row -->
+<!-- bottom row. list of eaten burgers -->
+<div class='row'>
+    <div class='col s12'>
+        <h4 class='center-align sectionHead'>Burgers you have DEVOURED!</h4>
+        <div class="divider"></div>
+        <ul class='center-align'>
+            {{#each burgers}} {{#if this.devoured}}
+            <div class='col s4'>
+                <li>
+                    <p class='flow-text' id='newBurgers'>{{this.burger_name}}</p>
+                </li>
+            </div>
+            {{/if}} {{/each}}
+        </ul>
+    </div>
+</div>

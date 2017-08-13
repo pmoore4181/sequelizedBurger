@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
+    <link rel="stylesheet" href="assets/css/burger_style.css" type="text/css" />
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test</title>
+</head>
+
+<body>
+    <!-- top of page -->
+    <div class='container'>
+        <div class="row">
+            <br>
+            <div class="col s12 m8 l7">
+                <div class='center-align'>
+                    <h1>EAT DA BURGER</h1>
+                </div>
+            </div>
+            <div class="col s6 m2 l2">
+                <img src="assets/img/burger.ico" alt="burger" class="responsive-img" id="burgerPic" />
+            </div>
+            <div class="col s6 m2 l2">
+                <img src="assets/img/burger.ico" alt="burger" class="responsive-img" id="burgerPic" />
+            </div>
+        </div>
+        <div class="divider"></div>
+        <!-- intro to page -->
+        <div class='row'>
+            <div class='col s12'>
+                <div class='section'>
+                    <p class='center-align flow-text'>Do you want to eat all the burgers but just can't find enough time in the day? Well, we have a solution for you! Start by adding burgers below and when you have eaten one of those scrumptious little burgers, click 'Devour It!' and we'll take it off the list so you can move on to the next delicious patty!
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <!-- middle row -->
+        <div class='row'>
+            <!-- left side. add new burgers -->
+            <div class='col s12 m6 l6'>
+                <div class='row'>
+                    <div class='col s12 m12 l12'>
+                        <h4 class='center-align sectionHead'>Add A Burger</h4>
+                        <div class="divider"></div>
+                    </div>
+                </div>
+                <div class='row'>
+                    <form class="col s12 m12 l12" action="/" method="POST">
+                        <div class='row inputSection'>
+                            <div class="input-field col s10 offset-s1 center-align">
+                                <input type="text" id="ca" name="burger_name" </div>
+                                <label for="ca">Burger:</label>
+                                <button class="btn" type="submit">Add Burger</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- right side. show list of burgers -->
+            <div class='col s12 m6 l6'>
+                <div class='row'>
+                    <div class='col s12 m12 l12'>
+                        <h4 class='center-align sectionHead'>Burgers to Eat</h4>
+                        <div class="divider"></div>
+                    </div>
+                </div>
+                <div class='row'>
+                    <div class='col s12'>
+                        <ul class='center-align'>
+                            <li class='flow-text'>first burger</li>
+                            <li class='flow-text'>second burger</li>
+                            <li class='flow-text'>third burger</li>
+                            <li class='flow-text'>fourth burger</li>
+                            <li class='flow-text'>fifth burger</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end of middle row -->
+        <!-- bottom row. list of eaten burgers -->
+        <div class='row'>
+            <div class='col s12'>
+                <h4 class='center-align sectionHead'>Burgers you have DEVOURED!</h4>
+                <div class="divider"></div>
+                <ul class='center-align'>
+                    <li>
+                        Bacon Cheeseburger
+                    </li>
+                    <li>
+                        second Cheeseburger
+                    </li>
+                    <li>
+                        third Cheeseburger
+                    </li>
+                    <li>
+                        fourth Cheeseburger
+                    </li>
+                    <li>
+                        fifth Cheeseburger
+                    </li>
+                    <li>
+                        sixth Cheeseburger
+                    </li>
+                    <li>
+                        seventh Cheeseburger
+                    </li>
+                    <li>
+                        eighth Cheeseburger
+                    </li>
+                    <li>
+                        ninth Cheeseburger
+                    </li>
+                    <li>
+                        tenth Cheeseburger
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- end of bottom row -->
+    </div>
+</body>
+<!--Import jQuery before materialize.js-->
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+
+</html>

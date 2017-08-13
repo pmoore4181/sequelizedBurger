@@ -1,0 +1,45 @@
+html {
+    background-color: rgb(104, 99, 105);
+}
+
+.container {
+    background-color: rgb(124, 54, 83);
+    width: 90%;
+    padding: 0 5% 0 5%;
+}
+
+h1 {
+    color: rgb(220, 220, 220);
+    font-weight: 600;
+    font-size: 5em;
+}
+
+h4.center-align.sectionHead {
+    color: rgb(180, 180, 180);
+    font-weight: 475;
+    font-size: 2.7em;
+}
+
+.divider {
+    background-color: rgb(58, 60, 63);
+}
+
+.inputSection {
+    margin-top: 50px;
+}
+
+.section {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+img {
+    padding-top: 10px;
+}
+
+#newBurgers {
+    margin: 5px;
+    font-size: 1.3em;
+}

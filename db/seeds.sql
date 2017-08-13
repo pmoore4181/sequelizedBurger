@@ -1,0 +1,1 @@
+INSERT INTO cats (burger_name) VALUES ('Bacon Cheeseburger');
